@@ -1,30 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
-        <h1>Word to Icon Converter</h1>
-        <input type="text" id="wordInput" placeholder="Enter your name">
-        <button id="convertButton">Convert</button>
-        <div id="convertedWordContainer">
-            <p id="convertedWord1">
-                <span id="convertedWord1Text"></span>
-                <button id="copyButton1">Copy</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>NameCraft - Stylish Nickname Generator</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <h1 class="text-info">NameCraft</h1>
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              id="wordInput"
+              placeholder="Enter your name"
+              class="form-control"
+            />
+            <button id="convertButton" class="btn btn-primary">Convert</button>
+          </div>
+
+          <!-- ######CopyMassage###### -->
+          <div id="message-container">Click to Copy Your Name Style</div>
+
+          <!-- ######Converted Text###### -->
+          <div id="convertedWordContainer">
+            <p id="names convertedWord1">
+              <span id="convertedWord1Text"></span>
             </p>
-            <p id="convertedWord2">
-                <span id="convertedWord2Text"></span>
-                <button id="copyButton2">Copy</button>
+            <p id="names convertedWord2">
+              <span id="convertedWord2Text"></span>
             </p>
-            <p id="convertedWord3">
-                <span id="convertedWord3Text"></span>
-                <button id="copyButton3">Copy</button>
+            <p id="names convertedWord3">
+              <span id="convertedWord3Text"></span>
             </p>
+            <p id="names convertedWord4">
+              <span id="convertedWord4Text"></span>
+            </p>
+          </div>
+          
         </div>
-    
-        <script src="main.js"></script>
-</body>
+        
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
 </html>
